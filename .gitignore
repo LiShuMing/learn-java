@@ -1,0 +1,20 @@
+*~
+target
+.idea
+*.iml
+*.bak
+settings.xml
+.classpath.txt
+.fullclasspath.txt
+.DS_Store
+
+# eclipse
+.project
+.buildpath
+.classpath
+.settings
+.checkstyle
+
+logs/
+
+dependency-reduced-pom.xml
