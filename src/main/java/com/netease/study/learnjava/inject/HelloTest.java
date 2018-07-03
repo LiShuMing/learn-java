@@ -9,19 +9,19 @@ import com.google.inject.Module;
  * @author : lishuming
  */
 public class HelloTest {
-  public static void main(String[] args) {
-    Injector injector = Guice.createInjector(new Module() {
-      public void configure(Binder binder) {
+    public static void main(String[] args) {
+        Injector injector = Guice.createInjector(new Module() {
+            public void configure(Binder binder) {
 
-      }
-    });
+            }
+        });
 
-    HelloCaller helloCaller = injector.getInstance(HelloCaller.class);
-    helloCaller.sayHello();
-    helloCaller = injector.getInstance(HelloCaller.class);
-    helloCaller.sayHello();
+        HelloCaller helloCaller = injector.getInstance(HelloCaller.class);
+        helloCaller.sayHello();
+        helloCaller = injector.getInstance(HelloCaller.class);
+        helloCaller.sayHello();
 
-    HelloCaller helloCaller1 = injector.getInstance(HelloCaller.class);
-    helloCaller1.sayHello();
-  }
+        HelloCaller helloCaller1 = injector.getInstance(HelloCaller.class);
+        helloCaller1.sayHello();
+    }
 }

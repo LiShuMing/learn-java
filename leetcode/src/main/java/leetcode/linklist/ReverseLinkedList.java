@@ -17,6 +17,7 @@ public class ReverseLinkedList {
         }
         return next;
     }
+
     public static void main(String[] args) {
 
     }

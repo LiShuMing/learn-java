@@ -1,27 +1,7 @@
 package leetcode;
 
-import leetcode.array.RemoveDuplicate;
-import leetcode.array.RemoveElement;
-import leetcode.array.SearchInsert;
-import leetcode.array.Sum3Closest;
-import leetcode.basic.ContainerWithWater;
-import leetcode.basic.DivideTwoNumber;
-import leetcode.basic.Int2Roman;
-import leetcode.basic.PalindromeNumber;
-import leetcode.basic.RevertInt;
-import leetcode.basic.Roman2Int;
 import leetcode.linklist.LinkedNode;
-import leetcode.linklist.RemoveNode;
-import leetcode.linklist.SwapNodes;
-import leetcode.string.Atoi;
-import leetcode.string.GenParentness;
-import leetcode.string.LetterCombine;
-import leetcode.string.LongestCommonPrefix;
 import leetcode.string.MultiString;
-import leetcode.string.StrStr;
-import leetcode.string.ValidPaindrome;
-
-import java.io.DataInput;
 
 /**
  * @author : lishuming
@@ -32,7 +12,7 @@ public class Solution {
         //System.out.println(new Atoi().solution("-123"));
         //System.out.println(new PalindromeNumber().solution(12321));
 
-        int[] height = new int[]{1, 2, 3, 4};
+        int[] height = new int[] {1, 2, 3, 4};
         //System.out.println(new ContainerWithWater().soluction(height));
 
         //System.out.println(new Int2Roman().solution(87));
@@ -58,16 +38,16 @@ public class Solution {
         //LinkedNode node = SwapNodes.solution(node1);
         LinkedNode tnode = node1;
         /**
-        while (node1 != null) {
-            System.out.println(node1.getVal() + " ");
-            node1 = node1.next;
-        }
+         while (node1 != null) {
+         System.out.println(node1.getVal() + " ");
+         node1 = node1.next;
+         }
 
-        LinkedNode node = SwapNodes.solution2(tnode);
-        while (node != null) {
-            System.out.println(node.getVal() + " ");
-            node = node.next;
-        }*/
+         LinkedNode node = SwapNodes.solution2(tnode);
+         while (node != null) {
+         System.out.println(node.getVal() + " ");
+         node = node.next;
+         }*/
 
         int[] t = {2, 3, 3, 5};
         //System.out.println(RemoveDuplicate.solution(t));
@@ -80,6 +60,7 @@ public class Solution {
         //System.out.println(SearchInsert.solution(t, 4));
         System.out.println(MultiString.solution("123", "123"));
     }
+
     private static void printArray(int[] t) {
         for (int i = 0; i < t.length; i++) {
             System.out.println(t[i]);

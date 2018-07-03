@@ -11,8 +11,8 @@ public class ContainerWithWater {
         while (l < r) {
             h = Math.min(height[l], height[r]);
             max = Math.max(max, h * (r - l + 1));
-            while (height[r] <= h && l < r) r--;
-            while (height[l] <= h && l < r) l++;
+            while (height[r] <= h && l < r) { r--; }
+            while (height[l] <= h && l < r) { l++; }
         }
         return max;
     }

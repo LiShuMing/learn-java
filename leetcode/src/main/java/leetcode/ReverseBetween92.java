@@ -4,27 +4,27 @@ package leetcode;
  * @author : lishuming
  */
 public class ReverseBetween92 {
-	public ListNode reverseBetween(ListNode head, int m, int n) {
-		if (head == null) {
-			return null;
-		}
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        if (head == null) {
+            return null;
+        }
 
-		ListNode p = head, q = head;
+        ListNode p = head, q = head;
 
-		while (m - 1 > 0 && p != null) {
-			p = p.next;
-			m--;
-		}
+        while (m - 1 > 0 && p != null) {
+            p = p.next;
+            m--;
+        }
 
-		if (m > 0 && p == null) {
-			return head;
-		}
+        if (m > 0 && p == null) {
+            return head;
+        }
 
-		for (int i = m - 1; )
+        for (int i = m - 1; )
 
-	}
+    }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-	}
+    }
 }

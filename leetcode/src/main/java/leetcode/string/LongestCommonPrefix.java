@@ -17,11 +17,11 @@ public class LongestCommonPrefix {
         }
 
         int result = 0;
-        for (;result < minLenth; result++) {
+        for (; result < minLenth; result++) {
             for (int j = 1; j < strs.length; j++) {
-               if (strs[j].charAt(result) != strs[0].charAt(result)) {
-                   return strs[0].substring(0, result);
-               }
+                if (strs[j].charAt(result) != strs[0].charAt(result)) {
+                    return strs[0].substring(0, result);
+                }
             }
         }
         return strs[0].substring(0, result);

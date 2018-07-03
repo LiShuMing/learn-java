@@ -4,11 +4,11 @@ package leetcode;
  * @author : lishuming
  */
 public class A {
-	public void solution() {
+    public void solution() {
 
-	}
+    }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-	}
+    }
 }

@@ -8,10 +8,10 @@ import java.util.List;
  * @author : lishuming
  */
 public class LetterCombine {
-    private static String[] map = new String[]{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    private static String[] map = new String[] {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     public List<String> solution(String letter) {
-        if (letter.length() == 0) return Collections.emptyList();
+        if (letter.length() == 0) { return Collections.emptyList(); }
         List<String> result = new ArrayList<>();
         helper(result, letter, "");
         return result;

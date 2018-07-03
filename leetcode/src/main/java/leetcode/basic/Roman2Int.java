@@ -7,7 +7,7 @@ import java.util.HashMap;
  */
 public class Roman2Int {
     public int solution(String r) {
-        if (r == null || r.isEmpty()) return 0;
+        if (r == null || r.isEmpty()) { return 0; }
         HashMap<Character, Integer> m = new HashMap<>();
         m.put('I', 1);
         m.put('V', 5);

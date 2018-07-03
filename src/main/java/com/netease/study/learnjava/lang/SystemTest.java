@@ -1,6 +1,5 @@
 package com.netease.study.learnjava.lang;
 
-import java.lang.System;
 import java.io.Console;
 
 /**
@@ -9,9 +8,9 @@ import java.io.Console;
  * @since 1.6
  */
 public class SystemTest {
-  public static void main(String[] args) {
-    Console console = System.console();
-    String test = console.readLine("test:");
-    console.printf("read:" + test);
-  }
+    public static void main(String[] args) {
+        Console console = System.console();
+        String test = console.readLine("test:");
+        console.printf("read:" + test);
+    }
 }

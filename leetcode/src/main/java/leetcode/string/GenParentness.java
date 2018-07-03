@@ -12,12 +12,13 @@ public class GenParentness {
         helper(list, "", 0, n);
         return list;
     }
+
     public void helper(List<String> list, String s, int leftRest, int rightNeed) {
         if (leftRest == 0 && rightNeed == 0) {
             list.add(s);
             return;
         }
-        if (leftRest > 0) helper(list, s + "(", leftRest - 1, rightNeed + 1);
-        if (rightNeed > 0) helper(list, s + ")", leftRest, rightNeed - 1);
+        if (leftRest > 0) { helper(list, s + "(", leftRest - 1, rightNeed + 1); }
+        if (rightNeed > 0) { helper(list, s + ")", leftRest, rightNeed - 1); }
     }
 }

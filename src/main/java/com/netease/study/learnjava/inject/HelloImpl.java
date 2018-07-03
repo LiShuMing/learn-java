@@ -5,7 +5,7 @@ package com.netease.study.learnjava.inject;
  */
 
 public class HelloImpl implements Hello {
-  public void sayHello() {
-    System.out.println("Hello");
-  }
+    public void sayHello() {
+        System.out.println("Hello");
+    }
 }

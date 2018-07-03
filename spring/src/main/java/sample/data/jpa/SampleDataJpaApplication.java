@@ -16,10 +16,6 @@
 
 package sample.data.jpa;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -33,31 +29,33 @@ import org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter;
 import org.springframework.transaction.jta.JtaTransactionManager;
 
 import javax.sql.DataSource;
+import java.util.Collections;
+import java.util.Map;
 
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
 public class SampleDataJpaApplication extends JpaBaseConfiguration {
 
-	public static void main(String[] args) throws Exception {
-		SpringApplication.run(SampleDataJpaApplication.class, args);
-	}
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(SampleDataJpaApplication.class, args);
+    }
 
-	protected SampleDataJpaApplication(DataSource dataSource, JpaProperties properties,
-						  ObjectProvider<JtaTransactionManager> jtaTransactionManagerProvider,
-						  ObjectProvider<TransactionManagerCustomizers> transactionManagerCustomizers) {
-		super(dataSource, properties, jtaTransactionManagerProvider, transactionManagerCustomizers);
-	}
+    protected SampleDataJpaApplication(DataSource dataSource, JpaProperties properties,
+                                       ObjectProvider<JtaTransactionManager> jtaTransactionManagerProvider,
+                                       ObjectProvider<TransactionManagerCustomizers> transactionManagerCustomizers) {
+        super(dataSource, properties, jtaTransactionManagerProvider, transactionManagerCustomizers);
+    }
 
-	@Override
-	protected AbstractJpaVendorAdapter createJpaVendorAdapter() {
-		EclipseLinkJpaVendorAdapter adapter = new EclipseLinkJpaVendorAdapter();
-		return adapter;
-	}
+    @Override
+    protected AbstractJpaVendorAdapter createJpaVendorAdapter() {
+        EclipseLinkJpaVendorAdapter adapter = new EclipseLinkJpaVendorAdapter();
+        return adapter;
+    }
 
-	@Override
-	protected Map<String, Object> getVendorProperties() {
-		// Turn off dynamic weaving to disable LTW lookup in static weaving mode
-		return Collections.singletonMap("eclipselink.weaving", "false");
-	}
+    @Override
+    protected Map<String, Object> getVendorProperties() {
+        // Turn off dynamic weaving to disable LTW lookup in static weaving mode
+        return Collections.singletonMap("eclipselink.weaving", "false");
+    }
 }
