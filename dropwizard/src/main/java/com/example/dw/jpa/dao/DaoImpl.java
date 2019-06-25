@@ -58,7 +58,8 @@ public class DaoImpl implements Dao {
         return query.getResultList();
     }
 
-    private Query fillNamedParametersQuery(final Class clazz, final String namedQuery, final Map<String, Object> paramsMap) {
+    private Query fillNamedParametersQuery(final Class clazz, final String namedQuery,
+                                           final Map<String, Object> paramsMap) {
         final Query query = entityManager.get().createNamedQuery(namedQuery, clazz);
         paramsMap.entrySet().forEach((param) -> query.setParameter(param.getKey(), param.getValue()));
         return query;

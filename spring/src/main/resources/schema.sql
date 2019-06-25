@@ -94,21 +94,21 @@ insert into hotel(city_id, name, address, zip) values (8, 'Hotel Beaulac', ' Esp
 -- Bath
 insert into city(country, name, state, map) values ('UK', 'Bath', 'Somerset', '51.381428, -2.357454');
 insert into hotel(city_id, name, address, zip) values (9, 'The Bath Priory Hotel', 'Weston Road', 'BA1 2XT');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 0, '2000-01-23', 4, 1, 'A lovely hotel', 'We stayed here after a wedding and it was fantastic.  Recommend to all.');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 1, '2000-08-04', 3, 1, 'Very special', 'A very special hotel with lovely staff.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 0, '2000-01-23', 4, 1, 'com.alipay.tools.demo.A lovely hotel', 'We stayed here after a wedding and it was fantastic.  Recommend to all.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 1, '2000-08-04', 3, 1, 'Very special', 'com.alipay.tools.demo.A very special hotel with lovely staff.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 2, '2001-01-01', 2, 4, 'Nice but too hot', 'Stayed during the summer heat wave (exceptional for England!) and the room was very hot.  Still recommended.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 3, '2002-01-20', 3, 1, 'Big rooms and a great view', 'Considering how central this hotel is the rooms are a very good size.');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 4, '2002-11-03', 2, 1, 'Good but pricey', 'A nice hotel but be prepared to pay over the odds for your stay.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 4, '2002-11-03', 2, 1, 'Good but pricey', 'com.alipay.tools.demo.A nice hotel but be prepared to pay over the odds for your stay.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 5, '2003-09-18', 4, 1, 'Fantastic place', 'Just lovely.');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 6, '2004-03-21', 4, 3, 'A very special place', 'I stayed here in 2004 and found it to be very relaxing, a nice pool and good gym is cherry on the cake.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 6, '2004-03-21', 4, 3, 'com.alipay.tools.demo.A very special place', 'I stayed here in 2004 and found it to be very relaxing, a nice pool and good gym is cherry on the cake.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 7, '2004-04-10', 0, 0, 'Terrible', 'I complained after I was told I could not check out after 11pm.  Ridiculous!!!');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 8, '2004-12-20', 4, 4, 'A perfect location', 'Central location makes this a perfect hotel.  Be warned though, it''s not cheap.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 8, '2004-12-20', 4, 4, 'com.alipay.tools.demo.A perfect location', 'Central location makes this a perfect hotel.  Be warned though, it''s not cheap.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 9, '2005-04-19', 3, 2, 'Expensive but worth it', 'Dig deep into your pockets and enjoy this lovely City and fantastic hotel.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 10, '2005-05-21', 4, 1, 'The best hotel in the area', 'Top hotel in the area, would not stay anywhere else.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 11, '2005-11-17', 4, 2, 'Lovely hotel, fantastic grounds', 'The garden upkeep run into thousands (perhaps explaining why the rooms are so much) but so lovely and relaxing.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 12, '2006-01-04', 3, 4, 'Gorgeous Top Quality Hotel', 'Top draw stuff.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 13, '2006-01-21', 4, 1, 'Fabulous Hotel and Restaurant', 'The food at this hotel is second to none, try the peppered steak!');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 14, '2006-01-29', 4, 4, 'Feels like home', 'A lovely home away from home.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 14, '2006-01-29', 4, 4, 'Feels like home', 'com.alipay.tools.demo.A lovely home away from home.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 15, '2006-03-21', 1, 1, 'Far too expensive', 'Overpriced, Overpriced, Overpriced!!');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 16, '2006-05-10', 4, 1, 'Excellent Hotel, Wonderful Staff', 'The staff went out of their way to help us after we missed our last train home, organising a Taxi back to Newport even after we had checked out.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (9, 17, '2007-09-11', 3, 2, 'The perfect retreat', 'If you want a relaxing stay, this is the place.');
@@ -177,7 +177,7 @@ insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, detai
 -- Melbourne
 insert into city(country, name, state, map) values ('USA', 'Melbourne', 'FL', '28.083627, -80.608109');
 insert into hotel(city_id, name, address, zip) values (17, 'Radisson Suite Hotel Oceanfront', '3101 North Hwy', '32903');
-insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (21, 0, '2005-06-15', 3, 3, 'A very nice hotel', 'I can''t fault this hotel and I have stayed here many times.  Always friendly staff and lovely atmosphere.');
+insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (21, 0, '2005-06-15', 3, 3, 'com.alipay.tools.demo.A very nice hotel', 'I can''t fault this hotel and I have stayed here many times.  Always friendly staff and lovely atmosphere.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (21, 1, '2006-01-20', 2, 4, 'Comfortable and good value', 'To complaints at all.');
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (21, 2, '2007-08-21', 3, 1, 'Above average', 'Better than a lot of hotels in the area and not too pricey.');
 

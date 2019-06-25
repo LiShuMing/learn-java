@@ -13,6 +13,8 @@
         <module>spring</module>
         <module>dropwizard</module>
         <module>leetcode</module>
+        <module>scala</module>
+        <module>spark-tools</module>
     </modules>
 
     <properties>
@@ -147,54 +149,12 @@
                 <artifactId>scalap</artifactId>
                 <version>${scala.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.twitter</groupId>
+                <artifactId>util-collection_2.11</artifactId>
+                <version>18.11.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-
-            <plugin>
-                <artifactId>eclipselink-staticweave-maven-plugin</artifactId>
-                <groupId>au.com.alderaan</groupId>
-                <version>1.0.4</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>weave</goal>
-                        </goals>
-                        <phase>process-classes</phase>
-                        <configuration>
-                            <logLevel>ALL</logLevel>
-                            <includeProjectClasspath>true</includeProjectClasspath>
-                        </configuration>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.eclipse.persistence</groupId>
-                        <artifactId>eclipselink</artifactId>
-                        <version>2.6.2</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
-            <!-- Static weaver for EclipseLink -->
-            <plugin>
-                <groupId>com.ethlo.persistence.tools</groupId>
-                <artifactId>eclipselink-maven-plugin</artifactId>
-                <version>1.1-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>weave</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-    </build>
 
 </project>

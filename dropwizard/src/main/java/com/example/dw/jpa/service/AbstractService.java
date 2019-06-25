@@ -14,7 +14,7 @@ public abstract class AbstractService<T> {
     protected final Class<T> entityClass;
 
     public AbstractService() {
-        this.entityClass = (Class<T>) Generics.getTypeParameter(getClass());
+        this.entityClass = (Class<T>)Generics.getTypeParameter(getClass());
     }
 
     public void save(final T object) {
