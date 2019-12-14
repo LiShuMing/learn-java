@@ -19,9 +19,7 @@ public class ReverseBetween92 {
         if (m > 0 && p == null) {
             return head;
         }
-
-        for (int i = m - 1; )
-
+        return null;
     }
 
     public static void main(String[] args) {
